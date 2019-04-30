@@ -1,0 +1,58 @@
+000001181013     A          R TITLE
+000002181029     A                                  1  3DATE(*YY)
+000003181013     A                                      EDTCDE(Y)
+000004181029     A                                  1 15TIME
+000006181013     A                                  1109PAGNBR
+000007181030     A                                  2  8'KEYURKUMAR PATEL'
+000008181029     A                                  1 48'WEEKLY PAYROLL REPORT'
+000009181013     A                                  1103'PAGE:'
+000010181030     A                                  2  3'NAME:'
+000011181106     A            SHIFTTYPE     30      3 27
+000013181106     A          R COLHDG                    SPACEB(2)
+000014181031     A                                      SPACEA(1)
+000030181031     A                                     2'EMPLOYEE'
+000032181031     A                                    12'WORK'
+000033181031     A                                    23'PAY'
+000034181031     A                                    29'HOURLY'
+000035181031     A                                    38'HOURS'
+000036181031     A                                    47'REGULAR'
+000037181031     A                                    56'OVERTIME'
+000038181031     A                                    68'TOTAL'
+000039181031     A                                     2'NUMBER'
+000040181031     A                                      SPACEB(1)
+000041181031     A                                    12'SHIFT'
+000042181031     A                                    22'GRADE'
+000043181031     A                                    29'RATE'
+000044181031     A                                    37'WORKED'
+000045181031     A                                    48'PAY'
+000046181031     A                                    58'PAY'
+000047181030     A                                    69'PAY'
+000049181031     A          R EMPDETAIL                 SPACEB(1)
+000056181030     A            EMPNUM    R              2REFFLD(ALLSHIFT/EMPNUM SENECAPAY/AL-
+000057181030     A                                      LSHIFT)
+000059181030     A            WORKSHIFT R             15REFFLD(ALLSHIFT/WORKSHIFT +
+000060181030     A                                      SENECAPAY/ALLSHIFT)
+000062181030     A            PAYGRADE  R             25REFFLD(ALLSHIFT/PAYGRADE +
+000063181030     A                                      SENECAPAY/ALLSHIFT)
+000065181030     A            HOURLYRATE     5  2     29EDTCDE(2)
+000067181030     A            HRSWORKED R             39REFFLD(ALLSHIFT/HRSWORKED +
+000068181030     A                                      SENECAPAY/ALLSHIFT)
+000069181030     A                                      EDTCDE(1)
+000071181030     A            REGULARPAY     7  2     45EDTCDE(2)
+000073181030     A            OVERPAY        7  2     55EDTCDE(2)
+000075181030     A            TOTALPAY       7  2     65EDTCDE(2)
+000091181031     A          R TOTALS                    SPACEB(2)
+000092181030     A                                    27'Totals:'
+000093181030     A            TOTREGPAY      9  2     38EDTCDE(1)
+000094181030     A            TOTOVTPAY      9  2     51EDTCDE(1)
+000095181030     A            TOTEMPPAY      9  2     65EDTCDE(1)
+000100      
+000101181106     A*%%RS+<record-sequences>
+000102181106     A*%%RS+ <sequence name="Report1">
+000103181106     A*%%RS+  <device type="printer" width="132" height="66" />
+000104181106     A*%%RS+  <record-write record-format="TITLE" />
+000105181106     A*%%RS+  <record-write record-format="COLHDG" />
+000106181106     A*%%RS+  <record-write record-format="EMPDETAIL" />
+000107181106     A*%%RS+  <record-write record-format="TOTALS" />
+000108181106     A*%%RS+ </sequence>
+000109181106     A*%%RS </record-sequences>
